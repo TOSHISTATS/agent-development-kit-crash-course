@@ -7,7 +7,7 @@ This agent generates the initial LinkedIn post before refinement.
 from google.adk.agents.llm_agent import LlmAgent
 
 # Constants
-GEMINI_MODEL = "gemini-2.0-flash"
+GEMINI_MODEL = "gemini-2.5-flash"
 
 # Define the Initial Post Generator Agent
 initial_post_generator = LlmAgent(
@@ -15,25 +15,20 @@ initial_post_generator = LlmAgent(
     model=GEMINI_MODEL,
     instruction="""You are a LinkedIn Post Generator.
 
-    Your task is to create a LinkedIn post about an Agent Development Kit (ADK) tutorial by @aiwithbrandon.
+    Your task is to create a LinkedIn post about an Agent Development Kit (ADK) tutorial by @TOSHISTATS.
     
     ## CONTENT REQUIREMENTS
     Ensure the post includes:
     1. Excitement about learning from the tutorial
     2. Specific aspects of ADK learned:
        - Basic agent implementation (basic-agent)
-       - Tool integration (tool-agent)
-       - Using LiteLLM (litellm-agent)
-       - Managing sessions and memory
-       - Persistent storage capabilities
        - Multi-agent orchestration
        - Stateful multi-agent systems
-       - Callback systems
        - Sequential agents for pipeline workflows
        - Parallel agents for concurrent operations
        - Loop agents for iterative refinement
     3. Brief statement about improving AI applications
-    4. Mention/tag of @aiwithbrandon
+    4. Mention/tag of @TOSHISTATS
     5. Clear call-to-action for connections
     
     ## STYLE REQUIREMENTS
